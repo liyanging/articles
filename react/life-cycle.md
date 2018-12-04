@@ -51,7 +51,7 @@
    - shouldComponentUpdate:接收两个参数nextProps、nextState,该方法返回一个Boolean值，默认返回true，需要触发重复render().如果返回false，则不会调用以下的函数了：
      - componentWillUpdate()
      - render()
-     -  componentDidUpdate()
+     - componentDidUpdate()
 
      所以在实际开发中，利用该方法，根据新的props和state是否发生变化来决定是否返回值；是react项目可优化的地方。
      注意：不能在该方法里面不能调用this.setState()
@@ -59,8 +59,7 @@
    - componentWillUpdate() 在接收到新的 props和state之后render之前调用
      这里需要注意，你不能在 componentWillUpdate 中执行 this.setState()。如果感兴趣大家可以阅读: 
 
-     [https://github.com/liyanging/articles/blob/master/react/setState%E8%A7%A3%E6%9E%90.md]: 
-
+     https://github.com/liyanging/articles/blob/master/react/setState%E8%A7%A3%E6%9E%90.md
 
    - componentDidUpdate() 在React在Dom没更新之后立即调用
 
