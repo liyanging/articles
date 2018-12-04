@@ -56,7 +56,11 @@
      所以在实际开发中，利用该方法，根据新的props和state是否发生变化来决定是否返回值；是react项目可优化的地方。
      注意：不能在该方法里面不能调用this.setState()
 
-   - componentWillUpdate() 在接收到新的 props和state之后render之前调用，在该阶段是不能调用this.setState()
+   - componentWillUpdate() 在接收到新的 props和state之后render之前调用
+     这里需要注意，你不能在 componentWillUpdate 中执行 this.setState()。如果感兴趣大家可以阅读: 
+
+     []: https://github.com/liyanging/articles/blob/master/setState解析.md	"setState解析"
+
 
    - componentDidUpdate() 在React在Dom没更新之后立即调用
 
