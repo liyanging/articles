@@ -68,7 +68,7 @@ Ani.prototype= 1；
 
 当然这是错的，我们将_ani的[[Prototype]]属性打印出来一看，你会发现三个示例的值都是：
 
-![object_proto](/Users/liyang11/project/articles/images/object_proto.jpg)
+![object_proto](../images/object_proto.jpg)
 
 
 
