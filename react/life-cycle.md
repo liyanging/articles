@@ -2,7 +2,7 @@
 
 暂且将react的生命周期分为四个阶段：初始化、挂载、数据跟新、卸载。这写阶段对应的钩子函数和他们之间的关系，用图表示：
 
-![](/Users/liyang11/project/articles/images/life-cycle-react.png)
+![](../images/life-cycle-react.png)
 
 1. 组件初始化
 
