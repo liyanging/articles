@@ -6,7 +6,7 @@
 
 1. 组件初始化
 
-   ```
+   ```react
    class Test extends React.PurComponent{ //es6 的写法
        static defaultProps = {}; //对应 getDefaultProps()
        constructor() {
@@ -21,7 +21,7 @@
 
 2. 组件挂载
 
-   ```
+   ```react
    class Test extends React.PurComponent{
        、、、
        componentWillMount() {

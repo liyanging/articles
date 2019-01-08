@@ -14,7 +14,7 @@
 
 1. ### typeof
 
-   ```
+   ```javascript
    function printIn(val) {
      console.log(typeof val);
    }
@@ -50,7 +50,7 @@
 
 
 
-   ```
+   ```javascript
    var _date = new Date();
    var _err = new Error();
    function Person() {}
@@ -67,7 +67,7 @@
 
 
 
-   ```
+   ```javascript
    var _date = new Date();
    var _err = new Error();
    function Person() {}
@@ -89,7 +89,7 @@
 
 3. ### constructor
 
-   ```
+   ```javascript
    function Person() {};
    var _p = new Person();
    var _obj = {};
@@ -107,7 +107,7 @@
 
    现在来修改一下代码
 
-   ```
+   ```javascript
    function Person() {};
    Person.prototype = {}
    var _p = new Person();
@@ -127,7 +127,7 @@
 
    返回值："[object XXXX]"
 
-   ```
+   ```javascript
    function printIn(val){
      console.log(Object.prototype.toString.call(val));
    }

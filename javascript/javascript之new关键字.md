@@ -6,7 +6,7 @@ new官方解释：
 
 1. 没有显示调用return的情况
 
-   ```
+   ```javascript
    function Ani(name) {
      this.name = name;
    }
@@ -19,7 +19,7 @@ new官方解释：
 
 2. return 返回一个对象
 
-   ```
+   ```javascript
    function Ani(name) {
      this.name = name;
      return {name: '我就是显示返回的名字'}
@@ -33,7 +33,7 @@ new官方解释：
 
 3. return 返回一个原始对象
 
-   ```
+   ```javascript
    function Ani(name) {
      this.name = name;
      return '狗狗'
@@ -52,7 +52,7 @@ new官方解释：
 
 接下来我们在来看看 上面三种情况下，实例的[[Prototype]]属性，每个实例下面添加如下代码：
 
-```
+```javascript
 console.log(_ani.__proto__ === Ani.prototype);
 ```
 
@@ -60,7 +60,7 @@ console.log(_ani.__proto__ === Ani.prototype);
 
 接下来我们修改一下Ani的原型，将其原型改成一个原始数据类型，想想上面的答案是否还是一样的：
 
-```
+```javascript
 Ani.prototype= 1；
 ```
 
@@ -74,7 +74,7 @@ Ani.prototype= 1；
 
 我们再打印：
 
-```
+```javascript
 console.log(_ani.__proto__ === Ani.prototype) //false
 console.log(_ani.__proto__ === Object.prototype); // true
 ```
@@ -90,7 +90,7 @@ console.log(_ani.__proto__ === Object.prototype); // true
 
 最后，我们就一起来 实现一个new的功能：
 
-```
+```javascript
 function ownNew() {
   var obj = new Object(); //创建新对象
   var _constructor = Array.prototype.shift.call(arguments);

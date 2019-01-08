@@ -4,7 +4,7 @@
 
 接下来我们由一到思考题慢慢的揭开 setState的神秘面纱：
 
-```
+```react
 import React, { Component } from 'react';
 class Example extends Component { 
 	constructor() {

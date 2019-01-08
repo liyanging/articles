@@ -20,7 +20,7 @@
 
    有上面介绍原型，大家应该知道原型对象、constructor、实例之间的关系。想一下，如果让一个原型对象等于一个对象的实例会如何，以Person为栗子：
 
-   ```
+   ```javascript
    function Person() {
      
    }
