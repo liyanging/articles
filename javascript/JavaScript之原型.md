@@ -4,13 +4,13 @@
 
    每个函数在创建时，都会根据一定的规则获得一个prototype属性，这个属性包含换一个指针，指向该函数的原型对象。而这个原型对象会自动获取一个constructor属性，它指向prototype属性所在的函数。如下图：
 
-   ![prototype](/Users/liyang11/project/articles/images/prototype.png)
+   ![prototype](../images/prototype.png)
 
    也就是 Person === Person.prototype.constructor 返回true;
 
    如果是实例呢？当用构造函数创建实例时，该实例内部会获取到一个内部属性[[Prototype]]，而这个内部属性包含一个指向该构造函数的原型对象的指针。如下图：
 
-   ![prototype_new](/Users/liyang11/project/articles/images/prototype_new.png)
+   ![prototype_new](../images/prototype_new.png)
 
    由图可知，这个链接是存在于实例和构造函数的原型对象之间，而非构造函数之间。
 

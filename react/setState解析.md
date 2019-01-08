@@ -7,7 +7,7 @@
 ```react
 import React, { Component } from 'react';
 class Example extends Component { 
-	constructor() {
+  constructor() {
     super(); 
     this.state = {
       val: 0 
