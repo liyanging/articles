@@ -50,7 +50,7 @@ class Example extends Component {
 
 简单的定义了一个对象和一个方法：isBatchingUpdates和batchedUpdates（），这里值得注意的是：batchedUpdates方法里面的transction.perform。有关transction的讲解请参考:
 
-[]: http://front-ender.me/react/react-transaction.html
+[事务](http://front-ender.me/react/react-transaction.html )
 
 用一张流程图总结上面的流程则是：
 
